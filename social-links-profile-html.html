@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(0, 0%, 8%);
+      }
+      .cardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 8rem;
+      }
+      .links {
+        width: 100%;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      ul li {
+        width: 100%;
+        background-color: hsl(0, 0%, 20%);
+        padding: 0.5rem 0;
+        border-radius: 0.5rem;
+        text-align: center;
+        color: white;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+      }
+      ul a {
+        display: block;
+        width: inherit;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+      ul li:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: black;
+      }
+      h4 {
+        color: hsl(75, 94%, 57%);
+      }
+      h5 {
+        margin: 0.5rem 0;
+      }
+      @media (min-width: 426px) {
+        .card {
+          background-color: hsl(0, 0%, 12%);
+          color: white;
+          padding: 2rem;
+          border-radius: 1rem;
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          box-shadow: 0 4px 8px #000;
+        }
+      }
+      @media (max-width: 425px) {
+        .card {
+          background-color: hsl(0, 0%, 12%);
+          color: white;
+          padding: 2rem;
+          border-radius: 1rem;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          box-shadow: 0 4px 8px #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="cardContainer">
+      <div class="card">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="profile" />
+        <h1>Jessica Randall</h1>
+        <h4>London, United Kingdom</h4>
+        <h5>"Front-end developer and avid reader."</h5>
+        <div class="links">
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Frontend Mentor</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dinesh Teki</a>.
+    </div>
+  </body>
+</html>
